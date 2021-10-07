@@ -11,6 +11,12 @@ To install, download or clone the repo, then:
 `npm install`
 `truffle compile`
 
+### Requirements
+
+- Truffle v4.1.15
+- Solidity v0.4.25
+- Node v15.14.0
+
 ## Develop Client
 
 To run truffle tests:
