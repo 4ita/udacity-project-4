@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>FlightSurety</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand" href="#">FlightSurety</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExampleDefault"
+        aria-controls="navbarsExampleDefault"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <main class="container">
+      <div id="display-wrapper" class="top-20"></div>
+      <div>
+        <ul>
+          <li>Airline: AAA, Flight: ABC12, Departure: Japan</li>
+          <li>Airline: BBB, Flight: DEF34, Departure: New York</li>
+          <li>Airline: CCC, Flight: GHI56, Departure: Singapore</li>
+          <li>Airline: DDD, Flight: JKL78, Departure: London</li>
+        </ul>
+      </div>
+      <div class="row top-20">
+        <label class="form">Flight</label>
+        <input type="text" id="flight-number" />
+        <btn class="btn btn-primary" id="submit-oracle">Submit to Oracles</btn>
+      </div>
+
+      <div class="mt-5">
+        <h2>Airline</h2>
+        <h5>
+          Airline can be registered, but does not participate in contract until
+          it submits funding of 10 ether.
+        </h5>
+        <div class="row top-20">
+          <label class="form">Fund</label>
+          <input type="text" id="fund-amount" placeholder="(ETH)" />
+          <btn class="btn btn-primary" id="submit-fund">Fund</btn>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <h2>Passenger</h2>
+
+        <h3>Buy insurance</h3>
+        <h5>
+          Passengers may pay up to 1 ether for purchasing flight insurance.
+        </h5>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flightInsurance"
+            id="flight1"
+            value="1"
+            checked
+          />
+          <label class="form-check-label" for="flight1">
+            Airline: AAA, Flight: ABC12, Departure: Japan
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flightInsurance"
+            id="flight2"
+            value="2"
+          />
+          <label class="form-check-label" for="flight2">
+            Airline: BBB, Flight: DEF34, Departure: New York
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flightInsurance"
+            id="flight3"
+            value="3"
+          />
+          <label class="form-check-label" for="flight3">
+            Airline: CCC, Flight: GHI56, Departure: Singapore
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flightInsurance"
+            id="flight4"
+            value="4"
+          />
+          <label class="form-check-label" for="flight4">
+            Airline: DDD, Flight: JKL78, Departure: London
+          </label>
+        </div>
+        <div class="row top-20">
+          <label class="form">Insurance</label>
+          <input type="text" id="insurance-amount" placeholder="0-1 (ETH)" />
+          <btn class="btn btn-primary" id="submit-buy">Buy</btn>
+        </div>
+
+        <h3 class="mt-4">Delayed flights</h3>
+        <h5></h5>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flightInsurance"
+            id="flight1"
+            value="1"
+            checked
+          />
+          <label class="form-check-label" for="flight1">
+            Airline: AAA, Flight: ABC12, Departure: Japan
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flightInsurance"
+            id="flight2"
+            value="2"
+          />
+          <label class="form-check-label" for="flight2">
+            Airline: BBB, Flight: DEF34, Departure: New York
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flightInsurance"
+            id="flight3"
+            value="3"
+          />
+          <label class="form-check-label" for="flight3">
+            Airline: CCC, Flight: GHI56, Departure: Singapore
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flightInsurance"
+            id="flight4"
+            value="4"
+          />
+          <label class="form-check-label" for="flight4">
+            Airline: DDD, Flight: JKL78, Departure: London
+          </label>
+        </div>
+        <div class="row top-20">
+          <btn class="btn btn-primary mr-3" id="submit-credit">Credit</btn>
+          <btn class="btn btn-primary" id="submit-withdraw">Withdraw</btn>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
